@@ -7,6 +7,39 @@ const app = express();
 
 app.use(express.urlencoded({ extended: true }));
 
+app.get("/", (req, res) => {
+  res.send(`
+    <html lang="pt-br">
+      <head>
+        <meta charset="UTF-8">
+        <title>Página Inicial</title>
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+        >
+      </head>
+
+      <body>
+        <div class="container mt-5 text-center">
+          <h1 class="mb-4">Bem-vindo ao sistema</h1>
+          
+          <p class="lead">
+            Para acessar o cadastro de cliente, digite na URL:
+          </p>
+
+          <div class="alert alert-primary">
+            <strong>/cliente</strong>
+          </div>
+
+          <a class="btn btn-primary mt-3" href="/cliente">
+            Ir para Cadastro
+          </a>
+        </div>
+      </body>
+    </html>
+  `);
+});
+
 app.get("/cliente", (requisicao, resposta) => {
   resposta.send(`
     <html lang="pt-br">
