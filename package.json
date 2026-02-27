@@ -1,0 +1,28 @@
+{
+  "name": "atividade02ppi",
+  "version": "1.0.0",
+  "description": "Desenvolvimento de uma aplicação servidora HTTP para processar formulários HTML",
+  "keywords": [
+    "POST",
+    "HTTP"
+  ],
+  "homepage": "https://github.com/felipericci1005/Atividade02PPI#readme",
+  "bugs": {
+    "url": "https://github.com/felipericci1005/Atividade02PPI/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipericci1005/Atividade02PPI.git"
+  },
+  "license": "ISC",
+  "author": "Felipe Ricci",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
