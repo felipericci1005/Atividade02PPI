@@ -30,10 +30,6 @@ app.get("/", (req, res) => {
           <div class="alert alert-primary">
             <strong>/cliente</strong>
           </div>
-
-          <a class="btn btn-primary mt-3" href="/cliente">
-            Ir para Cadastro
-          </a>
         </div>
       </body>
     </html>
